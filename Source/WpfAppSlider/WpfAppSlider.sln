@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppSlider", "WpfAppSlider\WpfAppSlider.csproj", "{FA839F7B-9FC3-4AE3-ACBB-40C68462695A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA839F7B-9FC3-4AE3-ACBB-40C68462695A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA839F7B-9FC3-4AE3-ACBB-40C68462695A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA839F7B-9FC3-4AE3-ACBB-40C68462695A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA839F7B-9FC3-4AE3-ACBB-40C68462695A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {424E381C-2C90-4C45-B060-A863D70FBCF0}
+	EndGlobalSection
+EndGlobal

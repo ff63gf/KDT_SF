@@ -1,0 +1,40 @@
+﻿<Window x:Class="Wpf_BasicControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl x:Name="tabControl1" Margin="400,0,0,0">
+            <TabItem Header="Setting">
+                <Grid Background="#FFE5E5E5">
+                    <CheckBox x:Name="checkBox1" IsChecked="False" Checked="checkBox1_Checked" Content="CheckBox1" HorizontalAlignment="Left" Margin="33,33,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="checkBox2" Content="CheckBox2" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top"/>
+                    <GroupBox x:Name="Options1" Header="Option" Margin="22,81,25,167">
+                        <Grid>
+                            <RadioButton x:Name="radioButton1" Content="RadioButton1" IsChecked="True" Checked="radioButton1_Checked" HorizontalAlignment="Left" Margin="27,0,0,0" Height="18"/>
+                            <RadioButton x:Name="radioButton2" Content="RadioButton2" IsChecked="False" HorizontalAlignment="Left" Margin="194,0,0,0" VerticalAlignment="Center"/>
+                        </Grid>
+                    </GroupBox>
+                    <Slider x:Name="slider1" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="45,313,0,0" VerticalAlignment="Top" Width="324" ValueChanged="slider1_ValueChanged"/>
+                    <Label x:Name="label_sliderValue" Content="0" HorizontalAlignment="Center" Margin="0,270,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="WebBrowser">
+                <Grid Background="#FFE5E5E5">
+                    <WebBrowser x:Name="WebBrowser1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <ListBox x:Name="listBox" d:ItemsSource="{d:SampleData ItemCount=5}" ItemsSource="{Binding Items}" Margin="21,53,591,14"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="21,17,0,0" VerticalAlignment="Top" Width="188">
+            <ComboBoxItem Content="Coffee"/>
+            <ComboBoxItem Content="Milk"/>
+            <ComboBoxItem Content="Hot Choco"/>
+        </ComboBox>
+        <TextBox x:Name="textBox" Text="Test" HorizontalAlignment="Left" Margin="229,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Button x:Name="button_add" Content="Add" HorizontalAlignment="Left" Margin="229,88,0,0" VerticalAlignment="Top" Width="74" Click="button_add_Click"/>
+        <Button x:Name="button_del" Content="Delete" HorizontalAlignment="Left" Margin="229,123,0,0" VerticalAlignment="Top" Width="74" Click="button_del_Click"/>
+    </Grid>
+</Window>

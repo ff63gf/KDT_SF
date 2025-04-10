@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppException", "WindowsFormsAppException.csproj", "{7CB1886F-D2BC-4DCF-BDA6-3C216248484E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CB1886F-D2BC-4DCF-BDA6-3C216248484E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB1886F-D2BC-4DCF-BDA6-3C216248484E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB1886F-D2BC-4DCF-BDA6-3C216248484E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB1886F-D2BC-4DCF-BDA6-3C216248484E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB98F140-3659-48D9-9F01-3E545B66CA64}
+	EndGlobalSection
+EndGlobal

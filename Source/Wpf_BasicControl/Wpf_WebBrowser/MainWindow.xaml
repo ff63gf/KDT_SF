@@ -1,0 +1,24 @@
+﻿<Window x:Class="Wpf_WebBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_WebBrowser"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="131*"/>
+        </Grid.ColumnDefinitions>
+        <WebBrowser Margin="10,35,16,16" Grid.Column="1"/>
+        <Button x:Name="button_move" Content="Move" HorizontalAlignment="Left" Margin="468,8,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="textBox_url" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="URL" VerticalAlignment="Top" Width="447"/>
+        <Button x:Name="button_back" Content="Back" HorizontalAlignment="Left" Margin="147,13,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="button_fwd" Content="Forward" HorizontalAlignment="Left" Margin="202,13,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="button_favorite" Content="Favorite" HorizontalAlignment="Left" Margin="16,13,0,0" VerticalAlignment="Top" Width="107"/>
+        <ListBox x:Name="listBox_favorite" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="16,71,24,16"/>
+        <RadioButton x:Name="radioButton_add" Content="Add" HorizontalAlignment="Left" Margin="18,43,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <RadioButton x:Name="radioButton_load" Content="Load" HorizontalAlignment="Left" Margin="76,43,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
