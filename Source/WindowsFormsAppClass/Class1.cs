@@ -15,11 +15,14 @@ namespace WindowsFormsAppClass
 
         public Square() 
         {
-            MessageBox.Show("기본 생성자");
+            // 필드를 사용할 때는 this.를 사용하는 것이 예의
+            this.MyName = "기본 생성자";
+            MessageBox.Show(this.MyName);
         }
 
         public Square(string Text) 
-        { 
+        {
+            this.MyName += Text;
             MessageBox.Show(Text);
         }
         ~Square() 

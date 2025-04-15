@@ -16,7 +16,10 @@ namespace WindowsFormsAppCollection
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // 이론수업
             Application.Run(new Form1());
+            // 실습문제
+            //Application.Run(new FormLogin());
         }
     }
 }
