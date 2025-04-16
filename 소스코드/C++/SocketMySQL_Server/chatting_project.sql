@@ -1,0 +1,24 @@
+CREATE DATABASE chatting_project DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+
+USE chatting_project;
+
+DROP TABLE IF EXISTS user;
+CREATE TABLE user (
+	id VARCHAR(255) NOT NULL PRIMARY KEY,
+    pw VARCHAR(255) NOT NULL
+);
+
+INSERT INTO user VALUES ('admin', '1234');
+SELECT * FROM user;
+
+DROP TABLE IF EXISTS chat;
+CREATE TABLE chat (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	id_from VARCHAR(255) NOT NULL,
+    id_to VARCHAR(255),
+    message MEDIUMTEXT NOT NULL
+);
+
+INSERT INTO chat VALUES (1, 'admin', 'test', '안녕');
+INSERT INTO chat VALUES (2, 'admin', '', '안녕');
+SELECT * FROM chat;
